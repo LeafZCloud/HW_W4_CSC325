@@ -2,7 +2,7 @@ package com.mycompany.agency;
 
 
     // TODO 1: Make Executive a child of StaffEmploee
-public class Executive 
+public class Executive extends StaffEmployee
 {
     private double bonus;
 
@@ -14,7 +14,8 @@ public class Executive
             String socSecNumber, double rate)
     {
         super(eName, eAddress, ePhone, socSecNumber, rate);
-
+        System.out.println();
+        System.out.println();
         bonus = 0;  // bonus has yet to be awarded
     }
 

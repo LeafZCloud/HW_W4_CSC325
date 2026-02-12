@@ -27,7 +27,9 @@ public class StaffEmployee extends StaffMember
     //-----------------------------------------------------------------
     public String toString()
     {
-    
+        return super.toString() +
+                "\nSocial Security Number: " + socialSecurityNumber +
+                "\nPaid: " + payRate;
     }
 
     //-----------------------------------------------------------------
@@ -35,6 +37,6 @@ public class StaffEmployee extends StaffMember
     //-----------------------------------------------------------------
     public double pay()
     {
-       
+       return payRate;
     }
 }
